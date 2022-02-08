@@ -1,0 +1,45 @@
+
+*{
+    font-family: 'Lobster', cursive;
+    font-size: 1.1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    width: 90%;
+}
+h1{
+    font-size: 2.5rem;
+}
+
+#task-list {
+    width: 50%;
+
+}
+
+#task-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 2.5rem;
+}
+
+.task {
+    flex-grow: 2;
+}
+
+.delete-btn {
+    background: red;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+input[type=checkbox]:checked + span {
+    text-decoration: line-through;
+}
